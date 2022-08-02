@@ -40,8 +40,9 @@ defmodule Excoding do
     otp_app: :excoding,
     crate: "excoding",
     base_url: "https://github.com/moogle19/excoding/releases/download/v#{version}",
-    force_build: System.get_env("RUSTLER_PRECOMPILATION_EXAMPLE_BUILD") in ["1", "true"],
-    mode: if(Mix.env() == :prod, do: :release, else: :debug)
+    force_build: System.get_env("RUSTLER_PRECOMPILATION_EXCODING_BUILD") in ["1", "true"],
+    mode: if(Mix.env() == :prod, do: :release, else: :debug),
+    version: version
 
   @doc """
   Encodes utf-8 string using given codepage. If there are any unknown codes they
