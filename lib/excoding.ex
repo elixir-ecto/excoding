@@ -34,9 +34,13 @@ defmodule Excoding do
       iex> Excoding.decode(<<0xA5, 0xA4, 0xF9>>, "windows-1255")
       "¥₪ש"
   """
-  use Rustler,
+  version = Mix.Project.config()[:version]
+
+  use RustlerPrecompiled,
     otp_app: :excoding,
     crate: "excoding",
+    base_url: "https://github.com/moogle19/excoding/releases/download/v#{version}",
+    force_build: System.get_env("RUSTLER_PRECOMPILATION_EXAMPLE_BUILD") in ["1", "true"],
     mode: if(Mix.env() == :prod, do: :release, else: :debug)
 
   @doc """
