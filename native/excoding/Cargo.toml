@@ -1,0 +1,16 @@
+[package]
+name = "excoding"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "excoding"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.25.0"
+rustler_codegen = "0.25.0"
+lazy_static = "1.4"
+encoding = "0.2.33"
