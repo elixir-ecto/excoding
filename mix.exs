@@ -1,10 +1,12 @@
 defmodule Excoding.MixProject do
   use Mix.Project
 
+  @version "0.1.1"
+
   def project do
     [
       app: :excoding,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -36,7 +38,7 @@ defmodule Excoding.MixProject do
       maintainers: ["Kevin Seidel"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/moogle19/excoding"},
-      files: ~w(.formatter.exs mix.exs README.md lib native)
+      files: ~w(.formatter.exs mix.exs README.md lib native checksum-*.exs)
     ]
   end
 end
