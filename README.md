@@ -9,7 +9,7 @@ The package can be installed by adding `excoding` to your list of dependencies i
 ```elixir
 def deps do
   [
-    {:excoding, "~> 1.0"}
+    {:excoding, "~> 0.1"}
   ]
 end
 ```
