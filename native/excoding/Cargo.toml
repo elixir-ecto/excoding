@@ -11,6 +11,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 rustler = "0.26.0"
-rustler_codegen = "0.26.0"
+rustler_codegen = "0.27.0"
 lazy_static = "1.4"
 encoding = "0.2.33"

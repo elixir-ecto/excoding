@@ -82,7 +82,7 @@ dependencies = [
  "encoding",
  "lazy_static",
  "rustler",
- "rustler_codegen",
+ "rustler_codegen 0.27.0",
 ]
 
 [[package]]
@@ -145,7 +145,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d61e8ddf75de20513455d7b6f17241a595abbb01b53a6340cecc798a1b13422d"
 dependencies = [
  "lazy_static",
- "rustler_codegen",
+ "rustler_codegen 0.26.0",
  "rustler_sys",
 ]
 
@@ -154,6 +154,18 @@ name = "rustler_codegen"
 version = "0.26.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baa2e45c0165272070f80ce93bcd7dd5407a3c84a1ef73ab9900e00f00ef3d36"
+dependencies = [
+ "heck",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "rustler_codegen"
+version = "0.27.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0dbdc98de074c324945ecc2e3ecefa47948ad8e6ed4ecf6f3424f1293a6188d"
 dependencies = [
  "heck",
  "proc-macro2",
