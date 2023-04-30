@@ -1,6 +1,6 @@
 defmodule Excoding do
   @moduledoc """
-  String encoding/decoding library with NIF binding to rust [endcoding]() crate.
+  String encoding/decoding library with NIF binding to rust [encoding](https://crates.io/crates/encoding) crate.
 
   Supported encodings:
 
