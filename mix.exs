@@ -37,8 +37,16 @@ defmodule Excoding.MixProject do
       name: "excoding",
       maintainers: ["Kevin Seidel"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/moogle19/excoding"},
-      files: ~w(.formatter.exs mix.exs README.md lib native checksum-*.exs)
+      links: %{"GitHub" => "https://github.com/elixir-ecto/excoding"},
+      files: [
+        "lib",
+        "native/excoding/.cargo",
+        "native/excoding/src",
+        "native/excoding/Cargo*",
+        "checksum-*.exs",
+        "mix.exs",
+        "README.md",
+      ]
     ]
   end
 end
