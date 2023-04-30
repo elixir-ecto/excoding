@@ -39,7 +39,7 @@ defmodule Excoding do
   use RustlerPrecompiled,
     otp_app: :excoding,
     crate: "excoding",
-    base_url: "https://github.com/moogle19/excoding/releases/download/v#{version}",
+    base_url: "https://github.com/elixir-ecto/excoding/releases/download/v#{version}",
     force_build: System.get_env("RUSTLER_PRECOMPILATION_EXCODING_BUILD") in ["1", "true"],
     mode: if(Mix.env() == :prod, do: :release, else: :debug),
     targets:
