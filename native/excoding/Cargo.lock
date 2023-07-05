@@ -82,7 +82,7 @@ dependencies = [
  "encoding",
  "lazy_static",
  "rustler",
- "rustler_codegen 0.28.0",
+ "rustler_codegen 0.29.1",
 ]
 
 [[package]]
